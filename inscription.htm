@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/inscription.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="jeu.html">Jeu</a></li>
+                <li><a href="resultat.html">Résultat</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="inscription">
+        <form id="formInscription">
+            <h1>Formulaire d'inscription</h1>
+            <div class="formulaire">
+                <div class="styleFormulaire">
+                    <label for="prenom" class="label">Prénom : </label>
+                    <input type="text" required id="prenom" class="inputInformation">
+                </div>
+                <div class="styleFormulaire">
+                    <label for="nom" class="label">Nom : </label>
+                    <input type="text" required id="nom" class="inputInformation">
+                </div>
+                <div class="pied-formulaire droite">
+                    <input type="submit" value="Commencer" id="boutonValider">
+                </div>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
