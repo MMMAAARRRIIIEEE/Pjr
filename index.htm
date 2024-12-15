@@ -3,24 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aventure Interactive</title>
+    <title>Jeu Combiné</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/index.js" defer></script>
+    <script src="js/game.js" defer></script>
+    <script src="js/memory.js" defer></script>
 </head>
 <body>
     <header>
         <nav class="navbar">
             <ul class="nav-links">
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="choix1.html">Commencer l'aventure</a></li>
+                <li><a href="jeu.html">Jeu</a></li>
                 <li><a href="resultat.html">Résultat</a></li>
             </ul>
         </nav>
     </header>
-    <section class="accueil">
-        <h1>Bienvenue dans l'Aventure Interactive</h1>
-        <p>Faites des choix pour avancer dans l'histoire. Bonne chance !</p>
-        <a href="choix1.html" class="bouton">Commencer l'aventure</a>
+    <section class="jeu">
+        <h1>Jeu de Déplacement</h1>
+        <div id="game-container">
+            <div id="character"></div>
+        </div>
+        <div class="controls">
+            <button id="move-forward">Avancer</button>
+            <button id="move-backward">Reculer</button>
+        </div>
+    </section>
+    <section class="jeu">
+        <h1>Jeu de Mémoire</h1>
+        <div id="memory-game" class="memory-game"></div>
+        <div id="game-over" class="game-over"></div>
     </section>
 </body>
 </html>
