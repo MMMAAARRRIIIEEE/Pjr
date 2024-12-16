@@ -1,142 +1,142 @@
 body {
-    font-family: Arial, sans-serif; /* Définit la police de caractères pour le corps de la page */
-    margin: 0;                     /* Supprime les marges par défaut */
-    padding: 0;                    /* Supprime les espacements internes par défaut */
-    display: flex;                 /* Utilise Flexbox pour la mise en page */
-    flex-direction: column;        /* Aligne les éléments en colonne */
-    align-items: center;           /* Centre les éléments horizontalement */
-    justify-content: center;       /* Centre les éléments verticalement */
-    height: 100vh;                 /* Définit la hauteur à 100% de la hauteur de la fenêtre */
-    background-color: #f0f0f0;     /* Définit la couleur de fond */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
 }
 
 .navbar {
-    background-color: #333;        /* Définit la couleur de fond de la barre de navigation */
-    padding: 1rem;                 /* Ajoute un espacement interne */
-    width: 100%;                   /* Définit la largeur à 100% */
+    background-color: #333;
+    padding: 1rem;
+    width: 100%;
 }
 
 .navbar .nav-links {
-    list-style-type: none;         /* Supprime les puces des éléments de liste */
-    display: flex;                 /* Utilise Flexbox pour la mise en page */
-    justify-content: center;       /* Centre les liens horizontalement */
-    margin: 0;                     /* Supprime les marges par défaut */
-    padding: 0;                    /* Supprime les espacements internes par défaut */
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar .nav-links li {
-    margin: 0 1rem;                /* Ajoute un espacement horizontal entre les éléments de la liste */
+    margin: 0 1rem;
 }
 
 .navbar .nav-links a {
-    color: white;                  /* Définit la couleur du texte des liens */
-    text-decoration: none;         /* Supprime le soulignement des liens */
+    color: white;
+    text-decoration: none;
 }
 
 .jeu {
-    text-align: center;            /* Centre le texte */
+    text-align: center;
 }
 
 #game-container {
-    width: 500px;                  /* Définit la largeur du conteneur de jeu */
-    height: 500px;                 /* Définit la hauteur du conteneur de jeu */
-    background-color: #ddd;        /* Définit la couleur de fond du conteneur de jeu */
-    position: relative;            /* Positionne les éléments de manière relative */
-    overflow: hidden;              /* Cache les éléments qui dépassent du conteneur */
-    border: 2px solid #333;        /* Ajoute une bordure de 2px de couleur #333 */
-    margin-bottom: 20px;           /* Ajoute une marge en bas du conteneur */
+    width: 500px;
+    height: 500px;
+    background-color: #ddd;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #333;
+    margin-bottom: 20px;
 }
 
 #character {
-    width: 50px;                   /* Définit la largeur du personnage */
-    height: 50px;                  /* Définit la hauteur du personnage */
-    background-color: red;         /* Définit la couleur de fond du personnage */
-    position: absolute;            /* Positionne les éléments de manière absolue */
-    top: 225px;                    /* Positionne le personnage à 225px du haut du conteneur */
-    left: 225px;                   /* Positionne le personnage à 225px de la gauche du conteneur */
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    top: 225px;
+    left: 225px;
 }
 
 .controls {
-    display: flex;                 /* Utilise Flexbox pour la mise en page */
-    justify-content: center;       /* Centre les boutons horizontalement */
-    gap: 10px;                     /* Ajoute un espacement de 10px entre les boutons */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 button {
-    padding: 10px 20px;            /* Ajoute un espacement interne aux boutons */
-    font-size: 16px;               /* Définit la taille de la police des boutons */
-    cursor: pointer;               /* Change le curseur en pointeur */
-    border: none;                  /* Supprime les bordures des boutons */
-    border-radius: 5px;            /* Ajoute des coins arrondis aux boutons */
-    background-color: #4CAF50;     /* Définit la couleur de fond des boutons */
-    color: white;                  /* Définit la couleur du texte des boutons */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
 }
 
 button:hover {
-    background-color: #45a049;     /* Change la couleur de fond des boutons au survol */
+    background-color: #45a049;
 }
 
 .memory-game {
-    display: grid;                 /* Utilise Grid pour la mise en page */
-    grid-template-columns: repeat(4, 1fr); /* Crée une grille avec 4 colonnes de taille égale */
-    gap: 10px;                     /* Ajoute un espacement entre les éléments de la grille */
-    width: 50%;                    /* Définit la largeur à 50% */
-    margin: auto;                  /* Centre la grille horizontalement */
-    justify-content: center;       /* Centre les éléments horizontalement */
-    align-items: center;           /* Centre les éléments verticalement */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .memory-card {
-    width: 100px;                  /* Définit la largeur des cartes */
-    height: 100px;                 /* Définit la hauteur des cartes */
-    background-color: #fff;        /* Définit la couleur de fond des cartes */
-    border-radius: 5px;            /* Ajoute des coins arrondis */
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Ajoute une ombre portée */
-    cursor: pointer;               /* Change le curseur en pointeur */
-    position: relative;            /* Positionne les éléments de manière relative */
-    transform: scale(1);           /* Définit l'échelle initiale */
-    transition: transform 0.5s;    /* Ajoute une transition pour l'effet de transformation */
-    transform-style: preserve-3d;  /* Préserve la transformation 3D */
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    cursor: pointer;
+    position: relative;
+    transform: scale(1);
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
 }
 
 .memory-card.flip {
-    transform: rotateY(180deg);    /* Retourne la carte */
-    pointer-events: none;          /* Empêche les cartes retournées d'être touchées */
+    transform: rotateY(180deg);
+    pointer-events: none;
 }
 
 .memory-card:active {
-    transform: scale(0.97);        /* Réduit légèrement la taille de la carte lorsqu'elle est cliquée */
+    transform: scale(0.97);
 }
 
 .memory-card .front-face,
 .memory-card .back-face {
-    background-color: #2e3d49;     /* Définit la couleur de fond des faces des cartes */
-    display: flex;                 /* Utilise Flexbox pour la mise en page */
-    justify-content: center;       /* Centre le contenu horizontalement */
-    align-items: center;           /* Centre le contenu verticalement */
-    font-size: 24px;               /* Définit la taille de la police */
-    color: white;                  /* Définit la couleur du texte */
-    width: 100%;                   /* Définit la largeur à 100% */
-    height: 100%;                  /* Définit la hauteur à 100% */
-    position: absolute;            /* Positionne les éléments de manière absolue */
-    backface-visibility: hidden;   /* Cache la face arrière lors de la rotation */
-    border-radius: 5px;            /* Ajoute des coins arrondis */
+    background-color: #2e3d49;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 5px;
 }
 
 .memory-card .front-face {
-    transform: rotateY(180deg);    /* Retourne la face avant */
+    transform: rotateY(180deg);
 }
 
 .memory-card .back-face {
-    background-color: #2e3d49;     /* Définit la couleur de fond de la face arrière */
-    display: flex;                 /* Utilise Flexbox pour la mise en page */
-    justify-content: center;       /* Centre le contenu horizontalement */
-    align-items: center;           /* Centre le contenu verticalement */
-    font-size: 24px;               /* Définit la taille de la police */
-    color: white;                  /* Définit la couleur du texte */
+    background-color: #2e3d49;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
 }
 
 .memory-card img {
-    width: 100%;                   /* Définit la largeur de l'image à 100% */
-    height: 100%;                  /* Définit la hauteur de l'image à 100% */
-    object-fit: cover[_{{{CITATION{{{_1{](https://github.com/antydemant/lessons-2020/tree/0c6095f45bfd841914ac8e7e25f8c9df273dea69/02-closure-and-context%2Fhomework%2FREADME.md)
+    width: 100%;
+    height: 100%;
+}
